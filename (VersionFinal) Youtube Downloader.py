@@ -19,33 +19,39 @@ def iniciar_download():
     except Exception as e:
         messagebox.showerror("Erro", f"Erro ao buscar o vídeo: {e}")
         return
-
+    
+# Baixando em MP4
     if escolha == "MP4":
         ys = yt.streams.get_highest_resolution()
         caminho_download = "C:/Users/alexl/Downloads"
-
+     
+# Baixa o arquivo
         arquivo_baixado = ys.download(output_path="C:/Users/alexl/Downloads")
 
+# Obtém o nome do arquivo baixado
         nome_arquivo = os.path.basename(arquivo_baixado)
         novo_nome = os.path.splitext("𓅔Lucio.Downloader𓅔 " + nome_arquivo)[0] + ".mp4" # Aciciona minha marca e nome
         novo_arquivo = os.path.join(caminho_download, novo_nome)
-
+     
+# Renomeia o arquivo
         os.rename(arquivo_baixado, novo_arquivo)
 
         messagebox.showinfo("Sucesso", "Download do vídeo em MP4 concluído!")
+
+# Baixando em MP3
     elif escolha == "MP3":
         ys = yt.streams.filter(file_extension='mp4').get_audio_only()
         caminho_download = "C:/Users/alexl/Downloads"
 
-        # Baixa o arquivo
+# Baixa o arquivo
         arquivo_baixado = ys.download(output_path="C:/Users/alexl/Downloads")
 
-        # Obtém o nome do arquivo baixado
+# Obtém o nome do arquivo baixado
         nome_arquivo = os.path.basename(arquivo_baixado)
         novo_nome = os.path.splitext("𓅔Lucio.Downloader𓅔 " + nome_arquivo)[0] + ".mp3"  # Troca a extensão para .mp3
         novo_arquivo = os.path.join(caminho_download, novo_nome)
 
-        # Renomeia o arquivo
+# Renomeia o arquivo
         os.rename(arquivo_baixado, novo_arquivo)
 
         messagebox.showinfo("Sucesso", "Download do áudio em MP3 concluído!")
@@ -96,7 +102,7 @@ frame_opcoes = tk.Frame(root, bg="#f0f0f0")
 frame_opcoes.pack(pady=20)
 
 # Estilo para os botões de seleção
-botao_estilo_discreto = {
+botao_discreto = {
     "font": ("comic sans", 12, "bold"),
     "fg": "#333",
     "bd": 0,
@@ -107,10 +113,10 @@ botao_estilo_discreto = {
 }
 
 # Botões de MP4 e MP3
-mp4_button = tk.Radiobutton(frame_opcoes, text="MP4", variable=escolha_var, value="MP4", **botao_estilo_discreto)
+mp4_button = tk.Radiobutton(frame_opcoes, text="MP4", variable=escolha_var, value="MP4", **botao_discreto)
 mp4_button.pack(side=tk.LEFT, padx=20)
 
-mp3_button = tk.Radiobutton(frame_opcoes, text="MP3", variable=escolha_var, value="MP3", **botao_estilo_discreto)
+mp3_button = tk.Radiobutton(frame_opcoes, text="MP3", variable=escolha_var, value="MP3", **botao_discreto)
 mp3_button.pack(side=tk.LEFT, padx=20)
 
 # Botão para iniciar o download
