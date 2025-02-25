@@ -26,7 +26,7 @@ Como Usar
 5.	O arquivo será salvo na pasta C:/Users/alexl/Downloads com um nome personalizado.
 
 Estrutura do Projeto
-/
+
 |-- downloader.py  # Arquivo principal do projeto
 |-- README.md      # Documentação do projeto
 
@@ -39,4 +39,3 @@ Melhorias Futuras
 Autor
 Desenvolvido por Alexsander Lucio Barboza.
 Sinta-se à vontade para contribuir e melhorar este projeto! 🚀
-
