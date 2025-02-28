@@ -27,8 +27,8 @@ Como Usar
 
 Estrutura do Projeto
 
-|-- downloader.py  # Arquivo principal do projeto
-|-- README.md      # Documentação do projeto
+•	 Youtube Downloader.py  # Arquivo principal do projeto
+•  README.md              # Documentação do projeto
 
 Melhorias Futuras
 •	Permitir que o usuário escolha o diretório de download
