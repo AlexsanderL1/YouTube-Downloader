@@ -39,9 +39,11 @@ O programa abrirá uma interface gráfica onde você poderá inserir o link do v
 📄 Licença
 Este projeto está sob a licença MIT.
 
-👤 Contato
-Alexsander Lucio Barboza
-📧 Email: alexlucio.dev@gmail.com
-📱 Telefone: (21) 98136-6718
-🔗 LinkedIn
-🐙 GitHub
+## 👤 Contato
+
+- **Nome:** Alexsander Lucio Barboza  
+- 📧 **Email:** [alexlucio.dev@gmail.com](mailto:alexlucio.dev@gmail.com)  
+- 📱 **Telefone:** [(21) 98136-6718](tel:+5521981366718)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/alexsanderlucio)  
+- 🐙 [GitHub](https://github.com/AlexsanderL1)
+
