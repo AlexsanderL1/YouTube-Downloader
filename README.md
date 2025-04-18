@@ -1,46 +1,47 @@
-# Youtube Downloader
+# 🎬 YouTube Downloader - Tkinter GUI
 
-**Descrição**  
+Aplicação em Python com interface gráfica (Tkinter) que permite ao usuário fazer download de vídeos e/ou áudios do YouTube de forma simples e intuitiva. Este projeto visa facilitar a obtenção de mídia para uso pessoal ou para fins educacionais.
 
-Este é um aplicativo simples para download de vídeos e áudios do YouTube utilizando a biblioteca pytubefix e uma interface gráfica desenvolvida com tkinter.  
-O usuário pode baixar conteúdo nos formatos MP4 (vídeo) e MP3 (apenas áudio) de forma rápida e prática.  
+## 🚀 Funcionalidades
 
-**Funcionalidades**  
+- **Download de Vídeo e Áudio:** Escolha entre baixar o vídeo completo (MP4) ou apenas o áudio (MP3).
+- **Interface Gráfica Amigável:** Campo para inserção do link com placeholder dinâmico, seleção de formato por botões e feedback através de mensagens.
+- **Renomeação Automática:** Os arquivos baixados são renomeados com sua marca para facilitar a identificação.
 
-•	Download de vídeos do YouTube em formato MP4 (qualidade máxima disponível)  
-•	Download de áudio extraído do vídeo no formato MP3  
-•	Interface intuitiva com Tkinter  
-•	Nome personalizado para os arquivos baixados  
-•	Placeholder dinâmico para entrada de link  
-•	Opção de escolha entre MP4 e MP3  
-  
-**Como Usar**  
+## 🛠️ Tecnologias Utilizadas
 
-1.	Execute o arquivo Python do projeto.  
-2.	Copie e cole o link do vídeo do YouTube no campo apropriado.  
-3.	Escolha entre baixar como MP4 (vídeo) ou MP3 (áudio).  
-4.	Clique no botão "Baixar" para iniciar o download.  
-5.	O arquivo será salvo na pasta C:/Users/alexl/Downloads com um nome personalizado.
-  
-**Requisitos**  
+- **Python 3.x**
+- **Tkinter** - para a interface gráfica
+- **pytubefix** - para download dos vídeos e áudios
+- **Bibliotecas nativas:** `os`, `time`
 
-Antes de executar o projeto, certifique-se de ter os seguintes requisitos instalados:  
-•	Python 3.12.4  
-•	Bibliotecas necessárias:  
-pip install pytubefix  
+## 📦 Como Executar
 
-**Estrutura do Projeto**  
+1. **Clone o repositório:**
 
-•   Youtube Downloader.py  # Arquivo principal do projeto  
-•   README.md              # Documentação do projeto  
+   ```bash
+   git clone https://github.com/AlexsanderL1/youtube-downloader.git
+   cd youtube-downloader
+Instale as dependências:
 
-**Melhorias Futuras**  
+bash
+Copiar
+Editar
+pip install pytubefix
+Execute o programa:
 
-•	Permitir que o usuário escolha o diretório de download  
-•	Barra de progresso do download  
-•	Suporte a mais formatos de download    
-•	Interface mais moderna e responsiva  
+bash
+Copiar
+Editar
+python main.py
+O programa abrirá uma interface gráfica onde você poderá inserir o link do vídeo, escolher o formato de download e iniciar o processo.
 
-## Autor  
-Desenvolvido por **Alexsander Lucio Barboza.**  
-Sinta-se à vontade para contribuir e melhorar este projeto! 🚀  
+📄 Licença
+Este projeto está sob a licença MIT.
+
+👤 Contato
+Alexsander Lucio Barboza
+📧 Email: alexlucio.dev@gmail.com
+📱 Telefone: (21) 98136-6718
+🔗 LinkedIn
+🐙 GitHub
